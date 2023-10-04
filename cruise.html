@@ -14,7 +14,7 @@
 <input type="checkbox" id="checkbox1" value="True"> Shares Cabin<br>
     <input type="checkbox" id="checkbox2" value="True"> Breakfast<br>
     <input type="checkbox" id="checkbox3" value="False"> Pool Pass<br>
-    <button onclick="selectCruise()">Select a cruise</button>
+    <button type ="button" class="btn btn-secondary" onclick="selectCruise()">Select a cruise</button>
     
     <form>
         <label for="daysInput">Enter the number of days</label>
@@ -22,7 +22,7 @@
 
         <label for="priceInput">Enter price</label>
         <input type="text" id="priceInput" value="1000"><br>
-        <button type="button" onclick="updateCruise()">Update the cruise</button>
+        <button type="button" class="btn btn-secondary" onclick="updateCruise()">Update the cruise</button>
     </form>
     <script>
         let my_cruise = {};
