@@ -38,7 +38,7 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
 
     <input type ="text" id="form1_nick" name="form1_nick" autofocus > <br>
 
-    <input type="button" onclick="checkGuess()" value="Check the guess">
+    <input type="button" class="btn btn-primary" onclick="checkGuess()" value="Check the guess">
 
 </form>
 
@@ -74,7 +74,7 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
 
         }else {
 
-            if(count<3){
+            if(count<7){
 
                 wrong=wrong+1
 
@@ -85,7 +85,7 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
 
             else{
 
-                alert("Sorry, game over.")  
+                alert("Sorry, ran out of guesses.")  
 
             }    
 
