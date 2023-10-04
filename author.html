@@ -18,7 +18,7 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 
-integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+integrity="sha384-EVSTQN3/azprb1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
 
@@ -32,7 +32,7 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
 
     <label for="form1_age">The hidden author name</label>
 
-    <input type ="password" id="form1_age" name="form1_age" min=10 max=50 step=2 value="John Lennon"> <br>
+    <input type ="password" id="form1_age" name="form1_age" min=10 max=50 step=2 value="Dickens"> <br>
 
     <label for="form1_nick">Guess the author </label>
 
@@ -97,6 +97,31 @@ integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0Ec
 </script>  
 
 </script>  
+<div class="container">
+    <img src="b1.jpg" height="100" width="100" onclick="swapImage()" id="img" alt="image">
+    <script>
+        var useImage=1
+        function swapImage(){
+            out=document.getElementById("img")
+            switch(useImage){
+                case 1:
+                    out.src="b1.jpg"
+                    useImage=useImage+1
+                    break;
+                case 2:
+                    out.src="b2.jpg"
+                    useImage=useImage+1
+                    break;
+                case 3:
+                    out.src="b3.jpg"
+                    useImage=1
+                    break;
+                default:
+                    out.src="b1.jpg"                
+            }
+            
+        }
+   </script> 
 
 </body>
 
